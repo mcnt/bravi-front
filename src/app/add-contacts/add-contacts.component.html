@@ -1,0 +1,19 @@
+<mat-dialog-content>
+    <h2>Adicionar Contatos</h2>
+    <mat-form-field>
+        <mat-label>Tipo</mat-label>
+        <mat-select [(ngModel)]="contact.type">
+            @for (type of types; track type) {
+              <mat-option [value]="type">{{type}}</mat-option>
+            }
+          </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Valor</mat-label>
+        <input matInput [(ngModel)]="contact.value">
+    </mat-form-field> 
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+<button mat-raised-button color="primary" mat-button (click)="addContact(contact)">Adicionar</button>
+<button mat-raised-button color="accent" mat-button (click)="cancel()">Cancelar</button>
+</mat-dialog-actions>

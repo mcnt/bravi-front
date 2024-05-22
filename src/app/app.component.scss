@@ -1,0 +1,13 @@
+.container {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 40px
+}
+mat-dialog-content {
+    h2 {
+        color: black;
+    }
+    mat-form-field {
+    display: block;
+    }
+}

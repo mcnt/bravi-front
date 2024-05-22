@@ -1,0 +1,39 @@
+@import "../app.component.scss";
+
+.container {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 20px;
+        button {
+            width: 200px;
+        }
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .contact-data {
+            flex: 1;
+            padding-right: 10px;
+        }
+          
+        .contact-action {
+            display: flex;
+            justify-content: flex-end;
+        }
+          
+        .contact-action button {
+            margin-left: 10px;
+        }
+      }
+      
+      
+}

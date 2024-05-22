@@ -1,0 +1,11 @@
+<mat-dialog-content>
+    <h2>Editar Usuário</h2>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="user.name">
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+<button mat-raised-button color="primary" mat-button (click)="editUser(user.id, user)">Editar</button>
+<button mat-raised-button color="accent" mat-button (click)="cancel()">Cancelar</button>
+</mat-dialog-actions>
